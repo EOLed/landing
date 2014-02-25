@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <title>Montreal Chinese Alliance Church</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Condiment|Roboto:100,300' rel='stylesheet' type='text/css' />
+    <link href="main.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  </head>
+  <body>
+    <div class="header-wrapper container">
+      <div class="header">
+        <img src="mcac.png" class="img-responsive logo" />
+      </div>
+    </div>
+    <div class="site-name">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            Montreal Chinese Alliance Church
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu"></button>
+          <a class="navbar-brand" href="#">Montreal Chinese Alliance Church</a>
+        </div>
+         <div class="collapse navbar-collapse" id="collapse-menu">
+           <ul class="nav navbar-nav">
+             <li><a href="#">Link</a></li>
+             <li><a href="#">Link</a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">Action</a></li>
+                 <li><a href="#">Another action</a></li>
+                 <li><a href="#">Something else here</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">Separated link</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">One more separated link</a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+      </div>
+    </nav -->
+    <div class="header-wrapper theme">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 slogan">
+              <p>Mold me,</p>
+              <p class="use-me">Use me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-wrapper worship">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 slogan">
+              Come worship with us every Sunday at 9:30 am.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map_canvas"></div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="http://mtlcac.org">Montreal Chinese Alliance Church</a> |
+            <a href="http://mtlcac.org">mtlcac.org</a> |
+            <a href="https://maps.google.ca/maps?f=q&source=s_q&hl=en&geocode=&q=13+Finchley+St,+Hampstead,+QC&aq=0&oq=13+finchley&sll=53.796105,-68.44248&sspn=35.749029,47.197266&vpsrc=0&ie=UTF8&hq=&hnear=13+Finchley+St,+Hampstead,+Quebec+H3X+2Z4&ll=45.479106,-73.631852&spn=0.010246,0.011523&t=m&z=16&iwloc=A">13 Finchley, Hampstead</a> |
+            <a href="tel:5144822703">514.482.2703</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mcacLatLng = new google.maps.LatLng(45.479103, -73.632705);
+        var mapOptions = {
+          center: mcacLatLng,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+          position: mcacLatLng,
+          map: map,
+          title: 'Montreal Chinese Alliance Church'
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>

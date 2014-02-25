@@ -1,0 +1,89 @@
+.header-wrapper {
+  display: table;
+  width: 100%;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-color: #333;
+}
+
+.header {
+  text-align: center;
+}
+
+.logo {
+  margin: auto;
+  height: 400px;
+  padding: 50px 0;
+}
+
+.theme .header, .worship .header {
+  color: #eee;
+}
+
+.theme, .worship {
+  background-size: cover;
+  background-position: center;
+}
+
+.theme {
+  font-size: 120px;
+  background-image: url('theme.jpg');
+  font-family: 'Condiment', cursive;
+}
+
+.worship {
+  font-size: 72px;
+  background-image: url('service.jpg');
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.theme .slogan {
+  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  padding: 200px 0;
+  line-height: 100px;
+}
+
+.worship .slogan {
+  padding: 200px 0;
+  line-height: 72px;
+}
+
+.theme .header, .worship .header {
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.use-me {
+  margin-left: 100px;
+}
+
+#map_canvas {
+  width: 100%;
+  height: 400px;
+}
+
+.footer, .footer a:hover {
+  padding: 10px 0 30px 0;
+  background-color: #333;
+  color: #ccc;
+  font-size: 11px;
+  text-align: center;
+}
+
+.footer a {
+  color: #aaa;
+}
+
+.site-name {
+  font-size: 48px;
+  background-color: #111;
+  color: #aaa;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 46px;
+  padding: 20px 0;
+}
