@@ -101,6 +101,12 @@
   font-size: 14px;
   font-weight: bold;
   margin-top: 5px;
+  text-decoration: none;
+}
+
+.footer .github a {
+  font-size: 20px;
+  color: #292929;
 }
 
 .youth-pastor {
