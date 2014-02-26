@@ -103,6 +103,21 @@
   margin-top: 5px;
 }
 
+.youth-pastor {
+  text-align: center;
+  background-color: #8c2318;
+  color: #aaa;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.youth-pastor a, .youth-pastor a:hover {
+  color: #fff;
+}
+
 @media screen and (max-width: 640px) {
   .theme {
     font-size: 72px;
