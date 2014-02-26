@@ -29,6 +29,8 @@
   font-size: 120px;
   background-image: url('theme.jpg');
   font-family: 'Condiment', cursive;
+  overflow: hidden;
+  line-height: 100px;
 }
 
 .worship {
@@ -36,18 +38,17 @@
   background-image: url('service.jpg');
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  line-height: 72px;
 }
 
 .theme .slogan {
   transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
   padding: 200px 0;
-  line-height: 100px;
 }
 
 .worship .slogan {
   padding: 200px 0;
-  line-height: 72px;
 }
 
 .theme .header, .worship .header {
@@ -59,12 +60,12 @@
   margin-left: 100px;
 }
 
-#map_canvas {
+#map-canvas {
   width: 100%;
   height: 400px;
 }
 
-.footer, .footer a:hover {
+.footer {
   padding: 10px 0 30px 0;
   background-color: #333;
   color: #ccc;
@@ -86,4 +87,42 @@
   text-transform: uppercase;
   line-height: 46px;
   padding: 20px 0;
+}
+
+.site-name small, .site-name small a {
+  font-size: 24px;
+  line-height: 24px;
+  color: #555;
+}
+
+.footer-slogan, .footer-slogan a, .footer-slogan a:hover {
+  font-family: 'Condiment', cursive;
+  color: #890000;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  .theme {
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .site-name {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .site-name small, .site-name small a {
+    font-size: 20px;
+    line-height: 12px;
+    font-weight: 300;
+  }
+
+  .worship {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 300;
+  }
 }
