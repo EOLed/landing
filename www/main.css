@@ -26,9 +26,9 @@
 }
 
 .theme {
-  font-size: 120px;
+  font-size: 100px;
   background-image: url('theme.jpg');
-  font-family: 'Condiment', cursive;
+  font-family: 'Pacifico', cursive;
   overflow: hidden;
   line-height: 100px;
 }
@@ -56,8 +56,13 @@
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
-.use-me {
-  margin-left: 100px;
+.heaven-bound {
+  -webitkit-text-stroke:2px #1D3170;
+  background: -webkit-linear-gradient(top, #eee,#8C8C8C);
+  background: linear-gradient(top, #eee, #8C8C8C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 #map-canvas {
